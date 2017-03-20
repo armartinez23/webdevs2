@@ -1,0 +1,465 @@
+<html>
+  <head>
+    <!-- Material Design Lite -->
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ 
+  </head>
+  
+  <style>
+  h2{
+      background-color:black;
+      color:white;
+      width:900px;
+      height:500px;
+  }
+  h6{
+        font-family: 'Righteous', cursive;
+
+    
+  }
+  
+  #screen3{
+    
+    background-color:Grey;
+    
+  }
+  body {
+  background: #fafafa;
+  position: relative;
+}
+  
+      .screen {display: none;}
+      .mdl-layout mdl-js-layout mdl-layout--fixed-header{
+        color:green ;
+        
+      }
+      #demo-show-snackbar{
+        width :650px;
+        height:300px;
+      }
+      import url(http://fonts.googleapis.com/css?family=Press+Start+2P|Righteous);
+body {
+ font-family: 'Righteous', cursive;
+ padding: 0;
+ margin: 0;
+ background-color: #666;
+}
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+.container h6 {
+    text-align: center;
+    font-size: 78px;
+    padding: .2em 0 0 0;
+    margin: 0;
+}
+.pad.red {
+    left:15px;
+    top:15px;
+    background:rgb(255,0,0);
+    -webkit-border-radius:320px 20px 20px;
+    -moz-border-radius:320px 20px 20px;
+    -o-border-radius:320px 20px 20px;
+    border-radius:320px 20px 20px;
+}
+.pad.green {
+    right:15px;
+    top:15px;
+    background:rgb(0,255,0);
+    -webkit-border-radius:20px 320px 20px 20px;
+    -moz-border-radius:20px 320px 20px 20px;
+    -o-border-radius:20px 320px 20px 20px;
+    border-radius:20px 320px 20px 20px;
+}
+.pad.yellow {
+    bottom:15px;
+    right:15px;
+    background:rgb(255,255,0);
+    -webkit-border-radius:20px 20px 320px 20px;
+    -moz-border-radius:20px 20px 320px 20px;
+    -o-border-radius:20px 20px 320px 20px;
+    border-radius:20px 20px 320px 20px;
+}
+.pad.blue {
+    bottom:15px;
+    left:15px;
+    background:rgb(0,0,255);
+    -webkit-border-radius:20px 20px 20px 320px;
+    -moz-border-radius:20px 20px 20px 320px;
+    -o-border-radius:20px 20px 20px 320px;
+    border-radius:20px 20px 20px 320px;
+}
+.simon {
+    position:relative;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -o-border-radius:50%;
+    border-radius:50%;
+    width:400px;
+    height:400px;
+    background:#000;
+    margin:20px;
+    background:rgb(0,0,0);
+    background:-moz-linear-gradient(45deg,rgba(0,0,0,1) 0%,rgba(28,36,45,1) 100%);
+    background:-webkit-gradient(linear,left bottom,right top,color-stop(0%,rgba(0,0,0,1)),color-stop(100%,rgba(28,36,45,1)));
+    background:-webkit-linear-gradient(45deg,rgba(0,0,0,1) 0%,rgba(28,36,45,1) 100%);
+    background:-o-linear-gradient(45deg,rgba(0,0,0,1) 0%,rgba(28,36,45,1) 100%);
+    background:-ms-linear-gradient(45deg,rgba(0,0,0,1) 0%,rgba(28,36,45,1) 100%);
+    background:linear-gradient(45deg,rgba(0,0,0,1) 0%,rgba(28,36,45,1) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000',endColorstr='#1c242d',GradientType=1 );
+}
+.simon::before {
+    content:' ';
+    left:50%;
+    top:50%;
+    -webkit-border-radius:85px;
+    -moz-border-radius:85px;
+    -o-border-radius:85px;
+    border-radius:85px;
+    position:absolute;
+    display:block;
+    width:170px;
+    height:170px;
+    background:#000;
+    z-index:99;
+    margin: -85px;
+}
+.simon .display {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 17px;
+    line-height: 160%;
+    position:absolute;
+    cursor: pointer;
+    display:block;
+    background:rgb(255,255,255);
+    background:-moz-radial-gradient(center,ellipse cover,rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+    background:-webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,rgba(255,255,255,1)),color-stop(47%,rgba(246,246,246,1)),color-stop(100%,rgba(237,237,237,1)));
+    background:-webkit-radial-gradient(center,ellipse cover,rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+    background:-o-radial-gradient(center,ellipse cover,rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+    background:-ms-radial-gradient(center,ellipse cover,rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+    background:radial-gradient(center,ellipse cover,rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',endColorstr='#ededed',GradientType=1 );
+    width:120px;
+    padding-top:40px;/* dont remove */
+    height:80px;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    -o-border-radius:60px;
+    border-radius:60px;
+    left:50%;
+    top:50%;
+    text-align:center;
+    z-index:100;
+    margin:-60px;
+}
+.pad {
+    position:absolute;/* why ? */
+    width:180px;
+    height:180px;
+    background:rgba(20,20,20,1);
+    opacity: 0.5;
+    -webkit-transition:all 300ms ease;
+    -moz-transition:all 300ms ease;
+    -o-transition:all 300ms ease;
+    transition:all 300ms ease;
+}
+.pad.hover {
+    opacity: 0.7;
+}
+.pad.active {
+    opacity: 1;   
+}
+    </style>
+  <body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">The Bored Machine</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a id="link1" class="mdl-navigation__link" href="#">Screen 1</a>
+            <a id="link2" class="mdl-navigation__link" href="#">Screen 2</a>
+            <a id="link3" class="mdl-navigation__link" href="#">Screen 3</a>
+            
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Bored Options</span>
+        <nav class="mdl-navigation">
+          <a id="link1" class="mdl-navigation__link" href="#">Screen 1</a>
+          <a id="link2" class="mdl-navigation__link" href="#">Screen 2</a>
+          <a id="link3" class="mdl-navigation__link" href="#">Screen 3</a>
+          
+        </nav>
+      </div>
+      <main class="mdl-layout__content">    
+        <div id="screen1" class="screen page-content">
+      <h1>Color Changer Button</h1>
+      <p>Press the button to see it's color change</p>
+          <button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button"><p id="buttontext">Change Color</p></button>
+    <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+      <div class="mdl-snackbar__text"></div>
+      <button class="mdl-snackbar__action" type="button"></button>
+    </div>
+          
+        </div>
+        <div id="screen2" class="screen page-content"><h5>Screen 2</h5>
+        <input id="color_picker" type="color" onchange="showHex();"> <span id="color_hex_value"></span>
+	<h2>COLOR ME !</h2>
+      
+        </div>
+        <div id= "screen3" class="screen page-content">
+        <div class="container">
+    <h6>SIMON</h6>
+    <div class="simon">
+        <div class="pad red" ></div>
+        <div class="pad green" ></div>
+        <div class="pad yellow" ></div>
+        <div class="pad blue" ></div>
+        <div class="display" id="display"></div>
+    </div>
+</div>​
+        </div>
+      </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    (function() {
+  'use strict';
+  var snackbarContainer = document.querySelector('#demo-snackbar-example');
+  var showSnackbarButton = document.querySelector('#demo-show-snackbar');
+  var handler = function(event) {
+    showSnackbarButton.style.backgroundColor = '';
+  };
+  showSnackbarButton.addEventListener('click', function() {
+    'use strict';
+    showSnackbarButton.style.backgroundColor = '#' +
+        Math.floor(Math.random() * 0xFFFFFF).toString(16);
+   
+    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+  });
+}());
+    
+      $(function() {
+        
+        
+        $("#screen1").show();
+        
+        $("#link1").on("click",function(){
+          $(".screen").hide();
+           
+            $("#screen1").show();
+        });
+         $("#link2").on("click",function(){
+            $(".screen").hide();
+            $("#screen2").show();
+        });
+         $("#link3").on("click",function(){
+            $(".screen").hide();
+           $("#screen3").show();
+        });
+        
+      })
+      
+       $(function() {
+        
+        
+        $("#screen1").show();
+        
+        $("#link1").on("click",function(){
+          $(".screen").hide();
+           
+            $("#screen1").show();
+        });
+         $("#link2").on("click",function(){
+            $(".screen").hide();
+            $("#screen2").show();
+        });
+         $("#link3").on("click",function(){
+            $(".screen").hide();
+           $("#screen3").show();
+        });
+        
+      })
+      
+      //ColorButtonCode
+      $("#demo-show-snackbar").on("click",function(){
+        $("#buttontext").hide();
+      });
+      
+      //ColorTextCode
+      function showHex(){
+			var hex =  document.querySelector("#color_hex_value"),
+			    h2 = document.querySelector("h2");
+		
+			h2.style.backgroundColor = document.querySelector("#color_picker").value;
+		}
+      
+      (function() {
+  //SimonSaysCode
+    var pads = document.getElementsByClassName('pad'),
+        display = document.getElementById('display'),
+        pattern = [],
+        hold = [],
+        level, speed;
+
+    function playerMouseDown(e) {
+        this.className += ' active';
+    }
+
+    function playerMouseUp(e) {
+        simonMouseUp.apply(this);
+        playerClick.apply(this);
+    }
+
+    function simonMouseUp() {
+        this.className = this.className.replace(/ active/, '');
+    }
+
+    function playerHoverOver(e) {
+        this.className += ' hover';
+    }
+
+    function playerHoverOut(e) {
+        this.className = this.className.replace(/ hover/, '');
+    }
+
+    function playerClick() {
+        if (pads[hold.shift()] != this) {
+            gameOver();
+            return;
+        }
+        playerSays();
+    }
+
+    function clearContents(element) {
+        while (element.hasChildNodes()) {
+            element.removeChild(element.lastChild);
+        }
+    }
+
+    function updateDisplay(text) {
+        clearContents(display);
+        display.appendChild(document.createTextNode(text));
+    }
+
+    function registerHandlers() {
+        Array.prototype.forEach.call(pads, function(pad) {
+            pad.style.cursor = 'pointer';
+            pad.addEventListener('mouseover', playerHoverOver, false);
+            pad.addEventListener('mouseout', playerHoverOut, false);
+            pad.addEventListener('mousedown', playerMouseDown);
+            pad.addEventListener('mouseup', playerMouseUp);
+        });
+    }
+
+    function removeHandlers() {
+        Array.prototype.forEach.call(pads, function(pad) {
+            pad.style.cursor = 'default';
+            pad.removeEventListener('mouseover', playerHoverOver);
+            pad.removeEventListener('mouseout', playerHoverOut);
+            pad.removeEventListener('mousedown', playerMouseDown);
+            pad.removeEventListener('mouseup', playerMouseUp);
+        });
+    }
+
+    function gameOver() {
+        updateDisplay('You Lose!');
+        setTimeout(function() {
+            init();
+        }, 2000);
+    }
+
+    function beginLevel() {
+        removeHandlers();
+        level++;
+        speed -= level * 5;
+        updateDisplay('Level ' + level);
+        setTimeout(function() {
+            updateDisplay('Ready?');
+        }, speed);
+        setTimeout(function() {
+            updateDisplay('Begin!');
+        }, speed * 2);
+        setTimeout(function() {
+            generatePattern();
+            updateDisplay('SIMON SAYS');
+            simonSays();
+        }, speed * 3);
+    }
+
+    function generatePattern() {
+        var p = [];
+        for (var i = 0, l = (3 + level); i < l; i++) {
+            p.push(Math.floor(Math.random() * 3));
+        }
+        pattern = p.slice(0), hold = p.slice(0);
+    }
+
+    function simonSays() {
+        var current = pads[pattern.shift()];
+        playerMouseDown.apply(current);
+        setTimeout(function() {
+            simonMouseUp.apply(current);
+            if (pattern.length > 0) {
+                setTimeout(simonSays, speed);
+            } else {
+                 updateDisplay('3');
+                setTimeout(1);
+                updateDisplay('2');                              
+                setTimeout(1);
+                updateDisplay('1');
+                setTimeout(1);
+                updateDisplay('Go!');
+                setTimeout(function() {
+                    registerHandlers();
+                    playerSays();
+                }, 2000);
+            }
+        }, 300);
+    }
+
+    function playerSays() {
+        if (hold.length == 0) {
+            updateDisplay('You Win!');
+            setTimeout(function() {
+                beginLevel();
+            }, 2000);
+        } else {
+            updateDisplay('turns ' + hold.length);
+        }
+    }
+
+    function startHandler() {
+        this.style.cursor = 'default';
+        beginLevel();
+        this.removeEventListener('click', startHandler);
+    }
+
+    function init() {
+        level = 0;
+        speed = 2005;
+        updateDisplay('START');
+        display.style.cursor = 'pointer';
+        display.addEventListener('click', startHandler);
+    }
+
+    init();
+
+}());
+    </script>
+  </body>
+</html>
